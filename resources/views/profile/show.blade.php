@@ -79,7 +79,7 @@
             <ul>
                 @foreach($user->projects as $project)
                     <li>
-                        <a href="http://{{ $project->link }}" target="_blank">pietnascie.pl</a>
+                        <a href="{{ $project->link }}" target="_blank">{{ $project->link }}</a>
                         <p>
                             {{ $project->description }}
                         </p>
