@@ -49,9 +49,9 @@ class User extends Authenticatable
 
     public function basicinformation()
     {
-        return $this->hasOne(Basicinformations::class);
+        return $this->hasOne(BasicInformations::class);
     }
-    
+
     public function certificates()
     {
         return $this->hasMany(Certificate::class);
